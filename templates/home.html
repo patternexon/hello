@@ -1,13 +1,5 @@
 <html>
-<head>
-    <title>Headlines</title>
-</head>
 <body>
-    <h1>Headlines</h1>
-    {% for article in articles %}
-    <b><a href="{{article.link}}">{{article.title}}</a></b><br />
-    <i>{{article.published}}</i><br>
-    <hr />
-    {% endfor %}
-</body>
+    {{ feeds | safe }}
+<body>
 </html>

@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+{% for article in articles %}
+<b><a href="{{article.link}}">{{article.title}}</a></b><br />
+<i>{{article.published}}</i><br>
+<hr />
+{% endfor %}
